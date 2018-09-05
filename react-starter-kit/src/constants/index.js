@@ -1,0 +1,13 @@
+/* eslint-disable import/prefer-default-export */
+
+export const SET_RUNTIME_VARIABLE = 'SET_RUNTIME_VARIABLE';
+
+export const SAVE_AUTH = 'SAVE_AUTH';
+
+export const LOGOUT_AUTH = 'LOGOUT_AUTH';
+export const LOGOUT_AUTH_SUCCESS = 'LOGOUT_AUTH_SUCCESS';
+export const LOGOUT_AUTH_FAIL = 'LOGOUT_AUTH_FAIL';
+
+// export const GET_NOTIFICATIONS = 'GET_NOTIFICATIONS';
+// export const GET_NOTIFICATIONS_SUCCESS = 'GET_NOTIFICATIONS_SUCCESS';
+// export const GET_NOTIFICATIONS_FAIL = 'GET_NOTIFICATIONS_FAIL';

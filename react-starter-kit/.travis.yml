@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- 9
+env:
+- CXX=g++-4.8
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+script:
+- yarn lint
+- yarn test
+deploy:
+  api_key:
+    secure: SnUpdU5qZ9R+eJJEuVhxDmey0/7Ub1Eh4n0u9KpIeCMtC4G33EeZxUY9FG20zSsXQW8908OOT0cYUMf14Ld7zaSrK3MdLea2aYq9E6wszgrvL6/p9YO4d2COOeZzjw9nFYUs4UqQAoIixcJBaoz6qcmFBISn6n5RD/r9p/1qZcHJwIKDtosqOmekcs0sdp2jcMxeS5stX8cSVDOiGfylYvd3VgvTM7hnuAsgv1ZkVhN9hRDj9FZ3tccmp+FpM5S3AzbKWjOBdeLKlDxMnJw8qZaAz8pk5BaYhhkrF9m385jDgHywI1XMoxDQyit0uwTG1+6IJZylC11SbhaBYFfuL6BWDDopw5xobYLeXJqJke2jo5/DnWQQC8HVlVxnljKAyWXbmvT6X5jeh3d/Mppm/jWOWd45IWZ7djKZy1y957ezSaKMcKpmGFTpnBsuNGq0i5xZlaHOzsG2PqY2wD93JmzPTuqXv+6z/K/w81FigZJ/zzRKru/Ii6XUiarXkvxV4X4DDyysxDviO21kGy+5twLAfQSb2GTU8SqRtw4WHg+jr7J48jab+FyyNQOopPcpOB5FxhD6FKYHQCYns03H7l0nx5qlK7u2VlVQG6n89q52gcYUkgWSIaTYzAD7kSSyeCESmuA8wm2WKlEBiw2KZpGPSnu5rCzbvfZUHMPEEOM=
